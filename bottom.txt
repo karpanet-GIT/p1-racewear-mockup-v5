@@ -1,0 +1,44 @@
+<section class="z19" aria-label="Perché P1">
+<div style="max-width: 1360px; margin: 0 auto; padding: 36px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+<div class="z8"><span class="z9"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E0E0E" stroke-width="2" aria-hidden="true"><path d="M4 20l6-6M14 4l6 6-8 8-6-6z"></path></svg></span><span style="display: flex; flex-direction: column"><span class="z10">Fatto a mano in Italia</span><span style="font-size: 14px; color: #5A5B5E">Nel nostro atelier di Leinì (TO)</span></span></div>
+<div class="z8"><span class="z9"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E0E0E" stroke-width="2" aria-hidden="true"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg></span><span style="display: flex; flex-direction: column"><span class="z10">Omologazione FIA 8856-2018</span><span style="font-size: 14px; color: #5A5B5E">Tute, intimo, guanti e scarpe</span></span></div>
+<div class="z8"><span class="z9"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E0E0E" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h6"></path></svg></span><span style="display: flex; flex-direction: column"><span class="z10">Su misura e personalizzazione</span><span style="font-size: 14px; color: #5A5B5E">Preventivo e bozza grafica via email</span></span></div>
+<div class="z8"><span class="z9"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E0E0E" stroke-width="2" aria-hidden="true"><path d="M5 4h4l2 5-3 2a11 11 0 005 5l2-3 5 2v4a2 2 0 01-2 2A17 17 0 013 6a2 2 0 012-2z"></path></svg></span><span style="display: flex; flex-direction: column"><span class="z10">Assistenza dedicata</span><span style="font-size: 14px; color: #5A5B5E">+39 011 944 2404 · Lun–Ven</span></span></div>
+</div>
+</section>
+<footer style="background: #0E0E0E; color: #C9C9CC; font-size: 15px">
+<div style="max-width: 1360px; margin: 0 auto; padding: 72px 40px 40px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px; grid-column: span 2; min-width: 0">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 34px; color: #FFFFFF; text-transform: uppercase; line-height: 1">Novità dal paddock</span>
+<span>Nuove tute, gare e aperture dell'atelier. Una mail al mese.</span>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 6px; flex: 1 1 240px">
+<label for="nl-email" style="font-size: 13px">Email</label>
+<input id="nl-email" type="email" placeholder="nome@esempio.it" style="height: 48px; padding: 0 14px; border: 1px solid #4A4A4E; background: #1A1A1B; color: #FFFFFF; font: inherit">
+</div>
+<button style="height: 48px; padding: 0 24px; border: 0; background: #DBFB00; color: #0E0E0E; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Iscriviti</button>
+</div>
+</div>
+<div class="z3">
+<span class="z20">Catalogo</span>
+<a href="Categoria.dc.html" class="lnk-d">Tute da gara</a><a href="#" class="lnk-d">Intimo ignifugo</a><a href="#" class="lnk-d">Guanti e scarpe</a><a href="#" class="lnk-d">Kart e meccanici</a><a href="#" class="lnk-d">Vintage</a>
+</div>
+<div class="z3">
+<span class="z20">Servizi</span>
+<a href="#" class="lnk-d">Personalizzazione</a><a href="#" class="lnk-d">Su misura</a><a href="#" class="lnk-d">Template e schede misure</a><a href="#" class="lnk-d">Guida taglie</a><a href="#" class="lnk-d">Area B2B</a>
+</div>
+<div class="z3">
+<span class="z20">Contatti</span>
+<span>Via Torino 101, 10040 Leinì (TO)</span>
+<a href="#" class="lnk-d">+39 011 944 2404</a>
+<span>Lun–Ven 9:00–13:00 / 14:00–17:30</span>
+<span><a href="#" class="lnk-d">Instagram</a> · <a href="#" class="lnk-d">Facebook</a></span>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px 32px; justify-content: space-between; padding-top: 24px; border-top: 1px solid #2E2E31; font-size: 13px; color: #A6A7AA">
+<span>© 2026 Gloria Cars Srl · P1 Advanced Racewear · Leinì (TO) · P.IVA [P.IVA]</span>
+<span><a href="#" class="lnk-d">Privacy</a> · <a href="#" class="lnk-d">Cookie</a> · <a href="#" class="lnk-d">Condizioni di vendita</a></span>
+</div>
+</div>
+</footer>

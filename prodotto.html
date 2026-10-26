@@ -1,0 +1,450 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tuta PRO-R – P1 Advanced Racewear (mockup)</title><link rel="stylesheet" href="/p1.css"></head><body data-page="prodotto" style="margin:0"><div id="app"></div><script type="text/x-p1" id="tpl"><helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&amp;family=Work+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+.cfgbox{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}.cfg-prev{flex:1 1 240px;min-width:0;background:#F7F7F4;padding:20px 12px 16px;display:flex;flex-direction:column;align-items:center;gap:10px;position:sticky;top:12px}.cfg-views{display:flex;gap:8px;justify-content:center;width:100%}.cfg-views path,.cfg-views text{transition:fill .3s ease,stroke .3s ease}.cfg-name{font-weight:600;font-size:15px;text-align:center}.cfg-hint{font-size:13px;color:#5A5B5E;text-align:center;max-width:260px}.cfg-rows{flex:2 1 320px;min-width:0;display:flex;flex-direction:column;gap:20px}.cfg-head{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;justify-content:space-between;margin-bottom:10px}.cfg-sel{width:auto;min-width:180px;flex:0 1 220px}.sw-grid{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:5px}.sw:focus-visible{outline:3px solid #0E0E0E;outline-offset:2px}@media (max-width:600px){.sw-grid{grid-template-columns:repeat(9,minmax(0,1fr))}.cfg-prev{position:static}.cfg-sel{flex:1 1 100%}}
+body{margin:0}
+a{color:#0E0E0E}a:hover{color:#0E0E0E;text-decoration-color:#C9DF00}
+.ph{background:repeating-linear-gradient(135deg,#E6E6E3 0 14px,#DEDEDA 14px 28px)}
+.nav-d{color:#FFFFFF;text-decoration:none}.nav-d:hover{color:#DBFB00}
+.lnk-d{color:#FFFFFF}.lnk-d:hover{color:#DBFB00}
+.btn-line{color:#0E0E0E;text-decoration:none;border:1.5px solid #0E0E0E;background:#FFFFFF}.btn-line:hover{background:#0E0E0E;color:#DBFB00}
+.card{text-decoration:none;color:#0E0E0E}.card:hover .cardimg{outline:3px solid #DBFB00;outline-offset:-3px}
+.fld{height:48px;padding:0 14px;border:1px solid #A6A7AA;background:#FFFFFF;font:inherit;color:#0E0E0E;box-sizing:border-box;width:100%}
+input[type=radio],input[type=checkbox]{width:18px;height:18px;accent-color:#0E0E0E;margin:0}
+@keyframes p1in{from{transform:translateX(100%)}to{transform:none}}
+@keyframes p1fade{from{opacity:0}to{opacity:1}}
+.qbtn{width:32px;height:32px;border:1.5px solid #CDCDC9;background:#FFFFFF;font:inherit;font-weight:600;cursor:pointer;color:#0E0E0E}.qbtn:hover{border-color:#0E0E0E}
+.addk{border:1.5px solid #0E0E0E;background:#FFFFFF;font:inherit;font-size:13px;font-weight:600;padding:0 12px;min-height:36px;cursor:pointer;color:#0E0E0E}.addk:hover{background:#DBFB00}
+.btn-ink2{background:#FFFFFF;color:#0E0E0E;border:1.5px solid #0E0E0E}.btn-ink2:hover{background:#0E0E0E;color:#DBFB00}
+.lnk-u{background:none;border:0;padding:0;font:inherit;font-size:13px;color:#5A5B5E;text-decoration:underline;cursor:pointer}.lnk-u:hover{color:#0E0E0E}
+</style>
+</helmet>
+<div class="z11"><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="s"><path d="M80 22 L120 22 L145 38 L172 150 L156 154 L136 80 L138 150 L140 285 L104 285 L100 165 L96 285 L60 285 L62 150 L64 80 L44 154 L28 150 L55 38 Z" fill="var(--a)" stroke="var(--k,none)" stroke-width="1.5"></path><path d="M80 22 L120 22 L145 38 L141 54 L59 54 L55 38 Z" fill="var(--b)"></path><path d="M86 22 L114 22 L112 30 L88 30 Z M28 150 L44 154 L46 144 L31 140 Z M172 150 L156 154 L154 144 L169 140 Z M61 190 L67 190 L65 285 L60 285 Z M139 190 L133 190 L135 285 L140 285 Z" fill="var(--c)"></path><path d="M64 112 L136 112 L136 120 L64 120 Z" fill="var(--b)"></path></g></defs></svg>
+<!--TOP-->
+<div style="max-width: 1360px; margin: 0 auto; padding: 22px 40px 0">
+<nav aria-label="Percorso" style="font-size: 13px; color: #5A5B5E"><a href="Main.dc.html">Home</a> / <a href="Categoria.dc.html">Tute da gara</a> / <a href="Categoria.dc.html">Linea PRO</a> / PRO-R</nav>
+</div>
+<section style="max-width: 1360px; margin: 0 auto; padding: 22px 40px 80px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; display: flex; gap: 14px">
+<div style="display: flex; flex-direction: column; gap: 10px; flex: 0 0 88px">
+<sc-for list="{{thumbs}}" as="t">
+<button aria-label="{{t.label}}" onClick="{{t.pick}}" style="{{t.style}}"><sc-if value="{{t.front}}"><span style="width: 72px; height: 74px; overflow: hidden; display: block; background: #FFFFFF"><img src="{{t.img}}" alt="" style="{{t.imgStyle}}"></span></sc-if><sc-if value="{{t.back}}"><span style="width: 72px; height: 74px; overflow: hidden; display: block; background: #FFFFFF"><img src="{{t.img}}" alt="" style="{{t.imgStyle}}"></span></sc-if><sc-if value="{{t.fia}}"><svg viewBox="{{t.vb}}" width="66" height="78" aria-hidden="true" preserveAspectRatio="xMidYMid meet"><rect x="52" y="44" width="136" height="108" rx="8" fill="#0E0E0E"></rect><rect x="60" y="52" width="120" height="92" rx="4" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 3"></rect><text x="120" y="98" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="800" font-style="italic" font-size="40" fill="#DBFB00">FIA</text><text x="120" y="122" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#FFFFFF">8856-2018</text><text x="120" y="137" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="2" fill="#A6A7AA">HOMOLOGATED</text></svg></sc-if><span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #5A5B5E">{{t.short}}</span></button>
+</sc-for>
+</div>
+<div style="flex: 1; min-width: 0; height: 760px; background: #FFFFFF; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden">
+<span style="position: absolute; top: 18px; left: 18px; display: flex; gap: 6px; flex-wrap: wrap; z-index: 2">
+<span style="background: #0E0E0E; color: #FFFFFF; font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 5px 9px">FIA 8856-2018</span>
+<span style="background: #DBFB00; color: #0E0E0E; font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 5px 9px">MADE IN ITALY</span>
+</span>
+<sc-if value="{{mv.front}}"><img src="{{mainImg}}" alt="{{mainAlt}}" style="{{mainImgStyle}}"></sc-if><sc-if value="{{mv.back}}"><img src="{{mainImg}}" alt="{{mainAlt}}" style="{{mainImgStyle}}"></sc-if><sc-if value="{{mv.fia}}"><svg viewBox="{{mv.vb}}" width="460" height="620" role="img" aria-label="{{mainAlt}}" preserveAspectRatio="xMidYMid meet" style="max-width: 100%"><rect x="52" y="44" width="136" height="108" rx="8" fill="#0E0E0E"></rect><rect x="60" y="52" width="120" height="92" rx="4" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="4 3"></rect><text x="120" y="98" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="800" font-style="italic" font-size="40" fill="#DBFB00">FIA</text><text x="120" y="122" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#FFFFFF">8856-2018</text><text x="120" y="137" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="2" fill="#A6A7AA">HOMOLOGATED</text></svg></sc-if>
+
+</div>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div class="z0">
+<span style="font-size: 13px; color: #5A5B5E; text-transform: uppercase; letter-spacing: 0.1em">Linea PRO · GT, rally e turismo</span>
+<h1 class="z50">PRO-R</h1>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #5A5B5E">Cod. AAPRPRAID · Omologazione FIA 8856-2018</span>
+</div>
+<p style="margin: 0; color: #26272A; font-size: 17px">La tuta top di gamma P1: tre strati per soli 315 g/m², il 45% più traspirante della PRO della precedente omologazione. Il sistema R-FLEXI segue i movimenti del corpo e lascia le braccia libere al volante.</p>
+<div style="display: flex; align-items: baseline; gap: 10px; padding: 16px 0; border-top: 1px solid #CDCDC9; border-bottom: 1px solid #CDCDC9">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 42px; line-height: 1">{{price}}</span>
+<span style="font-size: 14px; color: #5A5B5E">{{vat}}</span>
+</div>
+<div class="z3">
+<span style="font-weight: 600">Colore: <span style="font-weight: 400">{{cw.name}}</span></span>
+<div role="radiogroup" aria-label="Colore" style="display: flex; gap: 10px; flex-wrap: wrap">
+<sc-for list="{{colorways}}" as="c">
+<button role="radio" aria-checked="{{c.checked}}" aria-label="{{c.name}}" onClick="{{c.pick}}" style="{{c.style}}">
+<span style="{{c.s1}}"></span><span style="{{c.s2}}"></span><span style="{{c.s3}}"></span>
+</button>
+</sc-for>
+</div>
+<span style="font-size: 14px; color: #5A5B5E">Vuoi un altro abbinamento? Con la personalizzazione scegli tra 25 colori.</span>
+</div>
+<div class="z3">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<span style="font-weight: 600">Taglia: <span style="font-weight: 400">{{sizeLabel}}</span></span>
+<a href="#" style="font-size: 14px">Guida taglie</a>
+</div>
+<div role="radiogroup" aria-label="Taglia" style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px">
+<sc-for list="{{sizes}}" as="s">
+<button role="radio" aria-checked="{{s.checked}}" onClick="{{s.pick}}" style="{{s.style}}">{{s.label}}</button>
+</sc-for>
+</div>
+<span style="font-size: 14px; color: #3A3B3E">{{sizeHint}}</span>
+</div>
+<div class="z3">
+<sc-if value="{{showCart}}">
+<div style="display: flex; gap: 10px">
+<div style="display: flex; flex-direction: column; gap: 2px; flex: 0 0 84px"><label for="qty" style="font-size: 12px; color: #5A5B5E">Quantità</label><input id="qty" type="number" value="1" min="1" class="fld"></div>
+<button style="flex: 1; align-self: flex-end; height: 56px; border: 0; background: #DBFB00; color: #0E0E0E; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 21px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer" onClick="{{addToCart}}">{{cartCta}}</button>
+</div>
+</sc-if>
+<a href="#personalizza" class="btn-line" style="display: flex; align-items: center; justify-content: center; min-height: 56px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 21px; letter-spacing: 0.06em; text-transform: uppercase">Personalizzala o falla su misura</a>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+<li class="z29"><span class="z30"></span>100% Nomex®, foderata in maglia 100% aramidica</li>
+<li class="z29"><span class="z30"></span>Taglie standard: spedizione in [N] giorni lavorativi</li>
+<li class="z29"><span class="z30"></span>Sottocasco AIR bianco in omaggio [promo da confermare]</li>
+</ul>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<a class="z54" href="#"><span style="font-weight: 600">Template tuta PRO</span><span style="font-size: 13px; color: #5A5B5E">PDF · per la tua grafica</span></a>
+<a class="z54" href="#"><span style="font-weight: 600">Scheda misure</span><span style="font-size: 13px; color: #5A5B5E">PDF · per il su misura</span></a>
+</div>
+</div>
+</section>
+<section class="z47" aria-label="Dettagli prodotto">
+<div style="max-width: 1360px; margin: 0 auto; padding: 0 40px">
+<div role="tablist" aria-label="Dettagli prodotto" style="display: flex; flex-wrap: wrap; gap: 0 32px; border-bottom: 1px solid #DEDEDA">
+<sc-for list="{{tabs}}" as="t">
+<button role="tab" aria-selected="{{t.selected}}" onClick="{{t.pick}}" style="{{t.style}}">{{t.label}}</button>
+</sc-for>
+</div>
+<div style="padding: 40px 0 56px; max-width: 960px; font-size: 17px; color: #26272A">
+<sc-if value="{{tabDesc}}">
+<div class="z4">
+<p style="margin: 0">La PRO-R è la tuta premium di P1 per GT, rally e turismo, adatta a tutte le discipline. È omologata secondo lo standard FIA 8856-2018, il più recente e il più severo per l'abbigliamento dei piloti nelle gare FIA.</p>
+<p style="margin: 0">Nonostante i requisiti di sicurezza più alti, è il 45% più traspirante della tuta PRO della precedente omologazione: un vantaggio decisivo quando si corre al caldo. Il sistema R-FLEXI, migliorato ancora, accompagna i movimenti del corpo; le spalline sono state riprogettate per essere più robuste e più comode.</p>
+<p style="margin: 0">È disponibile in tre abbinamenti di serie oppure su misura, in 25 colori, con il tuo nome e i loghi dei tuoi sponsor.</p>
+</div>
+</sc-if>
+<sc-if value="{{tabTech}}">
+<dl style="margin: 0; display: grid; grid-template-columns: 240px 1fr; gap: 0">
+<sc-for list="{{specs}}" as="s">
+<dt style="padding: 14px 0; border-bottom: 1px solid #DEDEDA; font-weight: 600">{{s.k}}</dt>
+<dd style="margin: 0; padding: 14px 0; border-bottom: 1px solid #DEDEDA; color: #3A3B3E">{{s.v}}</dd>
+</sc-for>
+</dl>
+</sc-if>
+<sc-if value="{{tabFia}}">
+<div class="z4">
+<p style="margin: 0">La PRO-R è omologata FIA 8856-2018, lo standard per l'abbigliamento ignifugo dei piloti richiesto nelle competizioni FIA. Il numero di omologazione è riportato sull'etichetta ricamata.</p>
+<p style="margin: 0">Numero di omologazione: [NUMERO] · <a href="#">Scarica il certificato (PDF)</a></p>
+</div>
+</sc-if>
+<sc-if value="{{tabSize}}">
+<div class="z28">
+<div style="overflow-x: auto">
+<table style="border-collapse: collapse; width: 100%; min-width: 900px; font-size: 15px">
+<thead><tr style="background: #0E0E0E; color: #FFFFFF"><th style="text-align: left; padding: 10px 12px">Taglia</th><sc-for list="{{sizeNums}}" as="h"><th style="padding: 10px 8px">{{h}}</th></sc-for></tr></thead>
+<tbody>
+<sc-for list="{{sizeRows}}" as="r">
+<tr style="border-bottom: 1px solid #DEDEDA"><th style="text-align: left; padding: 10px 12px; font-weight: 600">{{r.k}}</th><sc-for list="{{r.cells}}" as="c"><td style="text-align: center; padding: 10px 8px; color: #5A5B5E">{{c}}</td></sc-for></tr>
+</sc-for>
+</tbody>
+</table>
+</div>
+<p style="margin: 0">Vestibilità REGULAR. Fuori da questi intervalli, alto o oltre 120 kg? Scegli <strong>Su misura</strong> e allega la scheda misure.</p>
+</div>
+</sc-if>
+</div>
+</div>
+</section>
+<section id="personalizza" aria-labelledby="pers" style="background: #0E0E0E; color: #FFFFFF">
+<div style="max-width: 1360px; margin: 0 auto; padding: 88px 40px; display: flex; flex-wrap: wrap; gap: 56px; align-items: flex-start">
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<span class="z12">RICHIESTA DI PERSONALIZZAZIONE</span>
+<h2 id="pers" style="margin: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-style: italic; font-size: 64px; line-height: 0.92; text-transform: uppercase">Rendila<br><span style="color: #DBFB00">la tua PRO-R</span></h2>
+<p style="margin: 0; color: #C9C9CC">Non è un ordine e non paghi nulla ora. Ci invii la tua idea, l'atelier ti risponde via email con preventivo e bozza grafica entro [N] giorni lavorativi.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid #2E2E31">
+<li class="z15"><span class="z16">01</span><span><a href="#" class="lnk-d">Scarica il template tuta PRO</a> e disegna la tua grafica</span></li>
+<li class="z15"><span class="z16">02</span><span>Per il su misura, compila la <a href="#" class="lnk-d">scheda misure</a></span></li>
+<li class="z15"><span class="z16">03</span><span>Carica i file e invia la richiesta</span></li>
+<li class="z15"><span class="z16">04</span><span>Ricevi preventivo e bozza, poi confermi</span></li>
+</ol>
+<div style="height: 280px; background: #1A1A1B; display: flex; align-items: center; justify-content: center; gap: 24px; position: relative">
+<svg viewBox="0 0 200 300" width="140" height="210" aria-hidden="true"><path d="M80 22 L120 22 L145 38 L172 150 L156 154 L136 80 L138 150 L140 285 L104 285 L100 165 L96 285 L60 285 L62 150 L64 80 L44 154 L28 150 L55 38 Z" fill="none" stroke="#DBFB00" stroke-width="2" stroke-dasharray="5 4"></path></svg>
+<svg viewBox="0 0 200 300" width="140" height="210" aria-hidden="true"><path d="M80 22 L120 22 L145 38 L172 150 L156 154 L136 80 L138 150 L140 285 L104 285 L100 165 L96 285 L60 285 L62 150 L64 80 L44 154 L28 150 L55 38 Z" fill="none" stroke="#FFFFFF" stroke-width="2"></path></svg>
+<span style="position: absolute; left: 14px; bottom: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #A6A7AA">[ANTEPRIMA TEMPLATE TUTA, FRONTE E RETRO]</span>
+</div>
+</div>
+<div style="flex: 999 1 640px; min-width: 0; background: #FFFFFF; color: #0E0E0E; padding: 40px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
+<fieldset style="margin: 0; padding: 0; border: 0; display: flex; flex-direction: column; gap: 12px">
+<legend class="z17">1 · Cosa vuoi personalizzare</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px">
+<sc-for list="{{reqTypes}}" as="r">
+<label style="{{r.style}}">
+<input type="radio" name="tipo" checked="{{r.checked}}" onChange="{{r.pick}}">
+<span class="z6"><span style="font-weight: 600">{{r.label}}</span><span style="font-size: 13px; color: #5A5B5E">{{r.desc}}</span></span>
+</label>
+</sc-for>
+</div>
+</fieldset>
+<sc-if value="{{showGraphic}}">
+<fieldset class="z31">
+<legend class="z17">2 · Grafica</legend>
+<div class="cfgbox"><div class="cfg-prev"><div class="cfg-views"><svg viewBox="0 0 200 300" role="img" aria-label="Anteprima della tuta, fronte" style="width: 46%; max-width: 170px; height: auto"><path data-fill="c1" style="fill: {{cfgC1}}" d="M80 22 L120 22 L145 38 L172 150 L156 154 L136 80 L138 150 L140 285 L104 285 L100 165 L96 285 L60 285 L62 150 L64 80 L44 154 L28 150 L55 38 Z"></path><path data-fill="c2" style="fill: {{cfgC2}}" d="M80 22 L120 22 L145 38 L141 54 L59 54 L55 38 Z"></path><path data-fill="c3" style="fill: {{cfgC3}}" d="M86 22 L114 22 L112 30 L88 30 Z M28 150 L44 154 L46 144 L31 140 Z M172 150 L156 154 L154 144 L169 140 Z M61 190 L67 190 L65 285 L60 285 Z M139 190 L133 190 L135 285 L140 285 Z"></path><path data-fill="c2" style="fill: {{cfgC2}}" d="M64 112 L136 112 L136 120 L64 120 Z M64 205 L96 205 L96 222 L64 222 Z M104 205 L136 205 L136 222 L104 222 Z"></path><path data-stroke="c3" style="fill: none; stroke: {{cfgC3}}" stroke-width="2.5" d="M62 44 L68 72 M70 42 L75 70 M138 44 L132 72 M130 42 L125 70"></path></svg><svg viewBox="0 0 200 300" role="img" aria-label="Anteprima della tuta, retro" style="width: 46%; max-width: 170px; height: auto"><path data-fill="c1" style="fill: {{cfgC1}}" d="M80 22 L120 22 L145 38 L172 150 L156 154 L136 80 L138 150 L140 285 L104 285 L100 165 L96 285 L60 285 L62 150 L64 80 L44 154 L28 150 L55 38 Z"></path><path data-fill="c2" style="fill: {{cfgC2}}" d="M80 22 L120 22 L145 38 L141 54 L59 54 L55 38 Z M76 66 L124 66 L124 106 L76 106 Z M64 112 L136 112 L136 120 L64 120 Z"></path><path data-fill="c3" style="fill: {{cfgC3}}" d="M28 150 L44 154 L46 144 L31 140 Z M172 150 L156 154 L154 144 L169 140 Z M61 190 L67 190 L65 285 L60 285 Z M139 190 L133 190 L135 285 L140 285 Z"></path><text data-fill="c3" x="100" y="96" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="800" font-size="28" style="fill: {{cfgC3}}">P1</text></svg></div><span class="cfg-name" data-cfg-name="">{{cfgName}}</span><span class="cfg-hint">Anteprima indicativa: la bozza definitiva te la manda l’atelier.</span></div><div class="cfg-rows"><sc-for list="{{cfgRows}}" as="r"><div class="cfg-row"><div class="cfg-head"><label for="sel-{{r.key}}" style="font-size: 14px; font-weight: 500">{{r.label}}</label><select id="sel-{{r.key}}" class="fld cfg-sel" data-sel="{{r.key}}" onChange="{{r.change}}"><sc-for list="{{r.sw}}" as="w"><option value="{{w.hex}}" selected="{{w.on}}">{{w.name}}</option></sc-for></select></div><div class="sw-grid" role="radiogroup" aria-label="{{r.label}}"><sc-for list="{{r.sw}}" as="w"><button type="button" role="radio" class="sw" aria-checked="{{w.onTxt}}" aria-label="{{w.label}}" title="{{w.name}}" data-row="{{r.key}}" data-hex="{{w.hex}}" style="{{w.style}}" onClick="{{w.pick}}"></button></sc-for></div><input type="hidden" name="{{r.key}}" data-hid="{{r.key}}" value="{{r.hid}}"></div></sc-for></div></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px"><div class="z0"><label for="ricamo" style="font-size: 14px; font-weight: 500">Nome da ricamare</label><input id="ricamo" class="fld" placeholder="es. M. Rossi"></div><div class="z0"><label for="bandiera" style="font-size: 14px; font-weight: 500">Bandiera</label><input id="bandiera" class="fld" placeholder="es. Italia"></div><div class="z0"><label for="gruppo" style="font-size: 14px; font-weight: 500">Gruppo sanguigno (facoltativo)</label><select id="gruppo" class="fld"><option>Non ricamare</option><option>0+</option><option>0−</option><option>A+</option><option>A−</option><option>B+</option><option>B−</option><option>AB+</option><option>AB−</option></select></div></div>
+<div class="z0"><label for="loghi" style="font-size: 14px; font-weight: 500">Sponsor, scritte e posizioni</label><textarea class="z55" id="loghi" rows="4" placeholder="es. nome e bandiera sulla cintura, logo sponsor su petto, spalle e schiena"></textarea></div>
+<label for="files" style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 28px; border: 2px dashed #0E0E0E; background: #FAFFD6; text-align: center; cursor: pointer">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0E0E0E" stroke-width="1.6" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5"></path><path d="M4 16v4h16v-4"></path></svg>
+<span style="font-weight: 600">Carica il template compilato e i loghi</span>
+<span style="font-size: 13px; color: #3A3B3E">Trascina qui i file o sfoglia · PDF, AI, EPS, SVG, PNG, JPG · max [N] MB</span>
+<input class="z56" id="files" type="file" multiple="">
+</label>
+</fieldset>
+</sc-if>
+<sc-if value="{{showMeasures}}">
+<fieldset class="z31">
+<legend class="z17">{{measuresTitle}}</legend>
+<p style="margin: 0; font-size: 15px; color: #3A3B3E">Scarica la <a href="#">scheda misure</a>, compilala e caricala qui, oppure inserisci le misure principali. Se preferisci, possiamo prenderle noi in atelier a Leinì.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 14px">
+<div class="z0"><label for="m1" style="font-size: 14px; font-weight: 500">Altezza (cm)</label><input id="m1" class="fld" inputmode="numeric"></div>
+<div class="z0"><label for="m2" style="font-size: 14px; font-weight: 500">Peso (kg)</label><input id="m2" class="fld" inputmode="numeric"></div>
+<div class="z0"><label for="m3" style="font-size: 14px; font-weight: 500">Torace (cm)</label><input id="m3" class="fld" inputmode="numeric"></div>
+<div class="z0"><label for="m4" style="font-size: 14px; font-weight: 500">Vita (cm)</label><input id="m4" class="fld" inputmode="numeric"></div>
+<div class="z0"><label for="m5" style="font-size: 14px; font-weight: 500">Fianchi (cm)</label><input id="m5" class="fld" inputmode="numeric"></div><div class="z0"><label for="m6" style="font-size: 14px; font-weight: 500">Taglia abituale</label><select id="m6" class="fld"><option>Non so</option><option>46</option><option>48</option><option>50</option><option>52</option><option>54</option><option>56</option><option>58</option><option>60</option><option>62</option><option>64</option></select></div>
+</div>
+<label for="scheda" style="display: flex; align-items: center; gap: 12px; padding: 16px; border: 2px dashed #0E0E0E; background: #FAFFD6; cursor: pointer">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E0E0E" stroke-width="1.6" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5"></path><path d="M4 16v4h16v-4"></path></svg>
+<span><strong>Carica la scheda misure compilata</strong> <span style="color: #3A3B3E; font-size: 13px">· PDF o foto</span></span>
+<input class="z56" id="scheda" type="file">
+</label>
+</fieldset>
+</sc-if>
+<fieldset class="z31">
+<legend class="z17">{{contactTitle}}</legend>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px">
+<div class="z0"><label for="nome" style="font-size: 14px; font-weight: 500">Nome e cognome *</label><input id="nome" class="fld" autocomplete="name"></div>
+<div class="z0"><label for="email" style="font-size: 14px; font-weight: 500">Email *</label><input id="email" type="email" class="fld" autocomplete="email"></div>
+<div class="z0"><label for="tel" style="font-size: 14px; font-weight: 500">Telefono</label><input id="tel" type="tel" class="fld" autocomplete="tel"></div>
+<div class="z0"><label for="paese" style="font-size: 14px; font-weight: 500">Paese *</label><select id="paese" class="fld"><option>Italia</option><option>Altro paese UE</option><option>Extra UE</option></select></div>
+<div class="z0"><label for="team" style="font-size: 14px; font-weight: 500">Team o scuderia</label><input id="team" class="fld"></div>
+<div class="z0"><label for="pezzi" style="font-size: 14px; font-weight: 500">Numero di tute</label><input id="pezzi" type="number" min="1" value="1" class="fld"></div>
+</div>
+<div class="z0"><label for="note" style="font-size: 14px; font-weight: 500">Note e data della gara</label><textarea class="z55" id="note" rows="3"></textarea></div>
+<label style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: #3A3B3E"><input type="checkbox" style="margin-top: 3px"><span>Ho letto l'<a href="#">informativa privacy</a> e acconsento al trattamento dei dati per ricevere il preventivo. *</span></label>
+</fieldset>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; padding-top: 24px; border-top: 1px solid #DEDEDA">
+<span style="font-size: 14px; color: #5A5B5E; max-width: 360px">Riceverai una conferma via email con il riepilogo della richiesta.</span>
+<button style="min-height: 56px; padding: 0 36px; border: 0; background: #0E0E0E; color: #DBFB00; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 21px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Invia la richiesta</button>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="abbina" style="max-width: 1360px; margin: 0 auto; padding: 80px 40px">
+<h2 id="abbina" style="margin: 0 0 32px; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; text-transform: uppercase">Completa il kit</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+<sc-for list="{{related}}" as="p">
+<a href="Prodotto.dc.html" class="card z52">
+<span class="cardimg" style="height: 260px; background: #F7F7F4; position: relative; display: flex; align-items: center; justify-content: center"><sc-if value="{{p.isTop}}"><img src="https://cdn.shopify.com/s/files/1/0795/7010/8699/files/X-FLOW_COMFORTTOP_1.png?width=800" alt="Maglia ignifuga X-FLOW nera" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; box-sizing: border-box; mix-blend-mode: multiply; display: block"></sc-if><sc-if value="{{p.isBala}}"><img src="https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0003s_0027_AIRBalaclavaLarge_White.jpg?width=800" alt="Sottocasco AIR bianco" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; box-sizing: border-box; mix-blend-mode: multiply; display: block"></sc-if><sc-if value="{{p.isGlove}}"><img src="https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0005s_0002_SPEED_Black_Silver.jpg?width=800" alt="Guanti SPEED neri e argento" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; box-sizing: border-box; mix-blend-mode: multiply; display: block"></sc-if><sc-if value="{{p.isShoe}}"><img src="https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0004s_0000_SUPERLIGHT_White.jpg?width=800" alt="Scarpe da gara SUPERLIGHT bianche" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; box-sizing: border-box; mix-blend-mode: multiply; display: block"></sc-if></span>
+<span class="z6">
+<span class="z53">{{p.cat}}</span>
+<span class="z24">{{p.name}}</span>
+<span style="font-size: 14px; color: #3A3B3E">{{p.tag}}</span>
+<span style="font-weight: 600; margin-top: 4px">{{p.priceText}} <span class="z23">{{vatShort}}</span></span>
+</span>
+</a>
+</sc-for>
+</div>
+</section>
+<!--BOTTOM-->
+<sc-if value="{{cartOpen}}">
+<div onClick="{{closeCart}}" style="position: fixed; inset: 0; background: rgba(14, 14, 14, 0.55); z-index: 60; animation: p1fade 0.2s ease-out"></div>
+<aside role="dialog" aria-modal="true" aria-label="{{cartTitle}}" style="position: fixed; top: 0; right: 0; height: 100vh; max-height: 100vh; width: min(440px, 100%); background: #FFFFFF; z-index: 61; display: flex; flex-direction: column; box-shadow: -12px 0 40px rgba(0, 0, 0, 0.25); animation: p1in 0.28s cubic-bezier(0.2, 0.8, 0.2, 1)">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 20px 18px 24px; border-bottom: 1px solid #DEDEDA">
+<div style="display: flex; align-items: center; gap: 12px"><span style="width: 32px; height: 32px; background: #DBFB00; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E0E0E" stroke-width="2.6" aria-hidden="true"><path d="M5 12l5 5L19 7"></path></svg></span><span style="display: flex; flex-direction: column"><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 22px; text-transform: uppercase; line-height: 1.05">{{cartTitle}}</span><span style="font-size: 13px; color: #5A5B5E">{{cartCountLabel}}</span></span></div>
+<button class="z18" aria-label="Chiudi" onClick="{{closeCart}}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E0E0E" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+<div style="flex: 1; overflow-y: auto; padding: 8px 24px 24px">
+<sc-if value="{{cartEmpty}}"><p style="margin: 24px 0; color: #5A5B5E">Il carrello è vuoto.</p></sc-if>
+<sc-for list="{{cartItems}}" as="i">
+<div style="{{i.rowStyle}}"><span style="flex: 0 0 72px; height: 88px; background: #F7F7F4; display: flex; align-items: center; justify-content: center"><sc-if value="{{i.isSuit}}"><img src="{{i.img}}" alt="" style="width: 100%; height: 100%; object-fit: contain; padding: 4px; box-sizing: border-box; mix-blend-mode: multiply"></sc-if><sc-if value="{{i.isTop}}"><img src="{{i.img}}" alt="" style="width: 100%; height: 100%; object-fit: contain; padding: 4px; box-sizing: border-box; mix-blend-mode: multiply"></sc-if><sc-if value="{{i.isGlove}}"><img src="{{i.img}}" alt="" style="width: 100%; height: 100%; object-fit: contain; padding: 4px; box-sizing: border-box; mix-blend-mode: multiply"></sc-if></span><div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 4px"><span class="z10">{{i.name}}</span><span style="font-size: 13px; color: #5A5B5E">{{i.sub}}</span><div style="display: flex; align-items: center; gap: 12px; margin-top: 6px"><div style="display: flex; align-items: center" role="group" aria-label="Quantità"><button class="qbtn" aria-label="Diminuisci quantità" onClick="{{i.minus}}">−</button><span style="min-width: 34px; text-align: center; font-weight: 600">{{i.qty}}</span><button class="qbtn" aria-label="Aumenta quantità" onClick="{{i.plus}}">+</button></div><button class="lnk-u" onClick="{{i.remove}}">Rimuovi</button></div></div><span style="font-weight: 700; white-space: nowrap">{{i.total}}</span></div>
+</sc-for>
+<div style="margin-top: 24px; padding: 16px; background: #F7F7F4; display: flex; flex-direction: column; gap: 12px">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #3A3B3E">COMPLETA IL KIT</span>
+<sc-for list="{{upsell}}" as="u">
+<div style="display: flex; align-items: center; gap: 12px"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-weight: 600; font-size: 14px">{{u.name}}</span><span style="font-size: 13px; color: #5A5B5E">{{u.price}}</span></span><button class="addk" onClick="{{u.add}}">+ Aggiungi</button></div>
+</sc-for>
+</div>
+</div>
+<div style="border-top: 1px solid #DEDEDA; padding: 20px 24px 24px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-weight: 600">Subtotale</span><span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; line-height: 1">{{cartSubtotal}}</span></div>
+<span style="font-size: 13px; color: #5A5B5E">{{cartNote}}</span>
+<button style="min-height: 54px; border: 0; background: #DBFB00; color: #0E0E0E; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 20px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer; margin-top: 6px">{{checkoutCta}}</button>
+<button class="btn-ink2" style="min-height: 48px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">{{viewCartCta}}</button>
+<button class="lnk-u" onClick="{{closeCart}}" style="align-self: center; min-height: 36px">Continua lo shopping</button>
+</div>
+</aside>
+</sc-if>
+</div></script><script type="text/x-dc" id="logic" data-props='{"canale":{"editor":"enum","options":["B2C","B2B"],"default":"B2C","section":"Vista"}}'>// I 25 colori della linea PRO, dalla cartella colori ufficiale P1
+const P1PAL = [['Bianco', '#FFFFFF'], ['Argento', '#D3D4D6'], ['Grigio medio', '#868686'], ['Antracite', '#3F3F3F'], ['Nero', '#111111'], ['Blu navy', '#1A2131'], ['Blu scuro', '#22375E'], ['Blu royal', '#1D4C89'], ['Azzurro cielo', '#8DADD2'], ['Azzurro neon', '#00E1FD'], ['Azzurro player', '#538DBC'], ['Verde Petronas', '#42A29D'], ['Giallo neon', '#EFFF01'], ['Giallo', '#FEED02'], ['Giallo DHL', '#F0C643'], ['Oro', '#BE9F55'], ['Verde neon', '#51FE00'], ['Verde prato', '#5C975D'], ['Verde British', '#335B49'], ['Arancio neon', '#F2632A'], ['Arancio', '#C4391D'], ['Rosso', '#C10E18'], ['Viola', '#41306F'], ['Fucsia', '#C4017A'], ['Rosa', '#CB92BC']];
+const p1Name = (h) => { const p = P1PAL.find((x) => x[1] === String(h).toUpperCase()); return p ? p[0] : h; };
+const p1Sw = (hex, on) => 'aspect-ratio: 1; min-width: 0; min-height: 22px; padding: 0; border: 0; cursor: pointer; background: ' + hex + '; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.18)' + (on ? '; outline: 2px solid #0E0E0E; outline-offset: 2px' : '');
+const p1Hex = (v) => (v && /^#[0-9a-f]{6}$/i.test(v)) ? v.toUpperCase() : null;
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+const q = typeof location !== 'undefined' ? new URLSearchParams(location.search) : null;
+this.state = { cw: 0, size: '52', tab: 'desc', req: 'grafica', thumb: 0, cart: [], cartOpen: false, justAdded: '',
+cfg: { c1: p1Hex(q && q.get('c1')) || '#3F3F3F', c2: p1Hex(q && q.get('c2')) || '#868686', c3: p1Hex(q && q.get('c3')) || '#EFFF01' } };
+}
+// cambio colore senza ridisegnare la pagina: i campi gia compilati restano
+pickColor(k, hex) {
+this.state.cfg[k] = hex;
+if (typeof document === 'undefined') return;
+const D = document, cfg = this.state.cfg;
+D.querySelectorAll('[data-fill="' + k + '"]').forEach((el) => { el.style.fill = hex; });
+D.querySelectorAll('[data-stroke="' + k + '"]').forEach((el) => { el.style.stroke = hex; });
+D.querySelectorAll('.sw[data-row="' + k + '"]').forEach((b) => { const on = b.getAttribute('data-hex') === hex; b.setAttribute('aria-checked', on ? 'true' : 'false'); b.setAttribute('style', p1Sw(b.getAttribute('data-hex'), on)); });
+D.querySelectorAll('[data-sel="' + k + '"]').forEach((el) => { el.value = hex; });
+D.querySelectorAll('[data-hid="' + k + '"]').forEach((el) => { el.value = p1Name(hex) + ' ' + hex; });
+D.querySelectorAll('[data-cfg-name]').forEach((el) => { el.textContent = p1Name(cfg.c1) + ' / ' + p1Name(cfg.c2) + ' / ' + p1Name(cfg.c3); });
+}
+renderVals() {
+const isB2B = (this.props.canale ?? 'B2C') === 'B2B';
+const st = this.state;
+const cwDefs = [
+{ name: 'Antracite / Grigio medio / Giallo fluo', c1: '#3A3B3E', c2: '#8A8C90', c3: '#DBFB00', img: 'P1Images_0000s_0005_PRO-R_Anthracite.jpg' },
+{ name: 'Nero / Argento / Azzurro fluo', c1: '#111111', c2: '#C3C5C8', c3: '#3FD8FF', img: 'P1Images_0000s_0004_PRO-R_Black.jpg' },
+{ name: 'Argento / Grigio medio / Blu scuro', c1: '#C3C5C8', c2: '#8A8C90', c3: '#1C2A55', img: 'PRO-R_SILVER-min.png' }
+];
+const dot = (c) => 'width: 14px; height: 32px; background: ' + c + '; display: block';
+const colorways = cwDefs.map((c, i) => {
+const on = st.cw === i;
+return {
+name: c.name, checked: on ? 'true' : 'false',
+pick: () => this.setState({ cw: i }),
+s1: dot(c.c1), s2: dot(c.c2), s3: dot(c.c3),
+style: 'display: flex; gap: 0; padding: 5px; min-height: 44px; background: #FFFFFF; cursor: pointer; border: 2px solid ' + (on ? '#0E0E0E' : '#CDCDC9') + (on ? '; box-shadow: 0 0 0 3px #DBFB00' : '')
+};
+});
+const sizeNums = ['46', '48', '50', '52', '54', '56', '58', '60', '62', '64'];
+const sizeList = sizeNums.concat(['Su misura']);
+const hintFor = (s) => s === 'Su misura' ? 'Realizzata sulle tue misure: si richiede con il modulo qui sotto, non dal carrello.' : 'Taglia ' + s + ' · altezza e peso consigliati: [DA TABELLA TAGLIE]';
+const sizes = sizeList.map((s) => {
+const on = st.size === s;
+return {
+label: s, checked: on ? 'true' : 'false',
+pick: () => this.setState({ size: s }),
+style: 'min-height: 48px; border: 1.5px solid ' + (on ? '#0E0E0E' : '#CDCDC9') + '; background: ' + (on ? '#0E0E0E' : '#FFFFFF') + '; color: ' + (on ? '#DBFB00' : '#0E0E0E') + '; font: inherit; font-weight: 600; font-size: ' + (s === 'Su misura' ? '12px' : '16px') + '; line-height: 1.1; cursor: pointer; padding: 0 2px'
+};
+});
+const views = [
+{ label: 'Fronte', short: 'FRONTE', vb: '0 0 200 300', front: true, z: '' },
+{ label: 'Retro', short: 'RETRO', vb: '0 0 200 300', back: true, z: '' },
+{ label: 'Dettaglio spalle R-FLEXI', short: 'SPALLE', vb: '30 12 140 104', front: true, z: '50% 22%' },
+{ label: 'Dettaglio gamba e ginocchio', short: 'GAMBA', vb: '40 150 120 140', front: true, z: '50% 74%' },
+{ label: 'Etichetta omologazione FIA', short: 'FIA', vb: '40 34 160 128', fia: true }
+];
+const cwI = cwDefs[st.cw];
+const SH = 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/';
+const photoOf = (v, w) => SH + (v.back ? 'PRO-R_BACK_SILVER-min.png' : cwI.img) + '?width=' + w;
+const imgStyle = (v, pad) => 'width: 100%; height: 100%; object-fit: contain; display: block; padding: ' + (v.z ? '0' : pad) + '; box-sizing: border-box' + (v.z ? '; transform: scale(2.4); transform-origin: ' + v.z : '');
+const thumbs = views.map((v, i) => Object.assign({}, v, {
+img: photoOf(v, 200), imgStyle: imgStyle(v, '2px'),
+label: 'Mostra vista: ' + v.label,
+pick: () => this.setState({ thumb: i }),
+style: 'width: 88px; height: 104px; padding: 4px; overflow: hidden; cursor: pointer; background: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: space-between; border: 2px solid ' + (st.thumb === i ? '#0E0E0E' : '#DEDEDA') + (st.thumb === i ? '; box-shadow: inset 0 -4px 0 #DBFB00' : '')
+}));
+const tabDefs = [ ['desc', 'Descrizione'], ['tech', 'Caratteristiche tecniche'], ['fia', 'Omologazione'], ['size', 'Taglie e vestibilità'] ];
+const tabs = tabDefs.map(([id, label]) => {
+const on = st.tab === id;
+return {
+label: label, selected: on ? 'true' : 'false',
+pick: () => this.setState({ tab: id }),
+style: 'min-height: 60px; padding: 0; border: 0; border-bottom: 4px solid ' + (on ? '#DBFB00' : 'transparent') + '; margin-bottom: -1px; background: transparent; cursor: pointer; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 20px; letter-spacing: 0.04em; text-transform: uppercase; color: ' + (on ? '#0E0E0E' : '#5A5B5E')
+};
+});
+const reqDefs = [ ['grafica', 'Solo grafica', 'Colori, nome e loghi su taglia standard'], ['misura', 'Solo su misura', 'Abbinamento di serie, taglia sulle tue misure'], ['entrambe', 'Grafica e su misura', 'La tua tuta, completamente'] ];
+const reqTypes = reqDefs.map(([id, label, desc]) => {
+const on = st.req === id;
+return {
+label: label, desc: desc, checked: on,
+pick: () => this.setState({ req: id }),
+style: 'display: flex; gap: 12px; align-items: flex-start; padding: 16px; cursor: pointer; border: 2px solid ' + (on ? '#0E0E0E' : '#CDCDC9') + '; background: ' + (on ? '#FAFFD6' : '#FFFFFF')
+};
+});
+const showGraphic = st.req !== 'misura';
+const showMeasures = st.req !== 'grafica' || st.size === 'Su misura';
+let n = 2; if (showGraphic) n++; const measuresN = n; if (showMeasures) n++;
+const cw = cwDefs[st.cw];
+const fmt = (n) => n.toLocaleString('it-IT', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+const addItem = (it, q) => {
+const items = this.state.cart.map((x) => Object.assign({}, x));
+const ex = items.find((x) => x.key === it.key);
+if (ex) ex.qty += q; else items.push(Object.assign({ qty: q }, it));
+this.setState({ cart: items, cartOpen: true, justAdded: it.key });
+};
+const setQty = (key, d) => {
+const items = this.state.cart.map((x) => Object.assign({}, x)).map((x) => x.key === key ? Object.assign(x, { qty: x.qty + d }) : x).filter((x) => x.qty > 0);
+this.setState({ cart: items });
+};
+const cartItems = st.cart.map((x) => ({
+name: x.name, sub: x.sub, qty: x.qty, img: x.img, c1: x.c1, c2: x.c2, c3: x.c3, isSuit: x.kind === 'suit', isTop: x.kind === 'top', isGlove: x.kind === 'glove',
+total: isB2B ? '[PREZZO B2B] €' : fmt(x.unit * x.qty),
+minus: () => setQty(x.key, -1), plus: () => setQty(x.key, 1), remove: () => setQty(x.key, -x.qty),
+rowStyle: 'display: flex; gap: 14px; align-items: flex-start; padding: 16px 0 16px ' + (x.key === st.justAdded ? '12px; border-left: 4px solid #DBFB00' : '0') + '; border-bottom: 1px solid #DEDEDA'
+}));
+const cartCount = st.cart.reduce((a, x) => a + x.qty, 0);
+const upsellDefs = [
+{ key: 'XFLOW', name: 'X-FLOW Slim Fit Top', sub: 'Intimo ignifugo · Giallo fluo / nero', unit: 181.78, kind: 'top', img: 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/X-FLOW_COMFORTTOP_1.png?width=200' },
+{ key: 'SPEED', name: 'Guanti SPEED', sub: 'Guanti · Nero / giallo fluo', unit: 142.74, kind: 'glove', img: 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0005s_0002_SPEED_Black_Silver.jpg?width=200' }
+];
+const upsell = upsellDefs.filter((u) => !st.cart.some((x) => x.key === u.key)).map((u) => ({ name: u.name, price: isB2B ? '[PREZZO B2B] €' : fmt(u.unit), add: () => addItem(u, 1) }));
+return {
+topbar: isB2B ? 'Accesso B2B: Team Rossi Motorsport [esempio] · Listino riservato attivo' : '100% fatto a mano in Italia · Omologazione FIA 8856-2018 · Su misura e personalizzazione',
+b2bLink: isB2B ? 'Ordine rapido per codice' : 'Area B2B team e rivenditori',
+price: isB2B ? '[PREZZO B2B] €' : '974,78 €',
+vat: isB2B ? 'IVA esclusa · listino riservato · min. [Q.TÀ] pezzi' : 'IVA inclusa · 799 € + IVA',
+addToCart: () => {
+const el = typeof document !== 'undefined' ? document.getElementById('qty') : null;
+const q = Math.max(1, parseInt(el && el.value ? el.value : '1', 10) || 1);
+addItem({ key: 'PROR|' + st.cw + '|' + st.size, name: 'Tuta PRO-R', sub: cw.name + ' · Taglia ' + st.size, unit: 974.78, kind: 'suit', c1: cw.c1, c2: cw.c2, c3: cw.c3, img: SH + cw.img + '?width=200' }, q);
+},
+closeCart: () => this.setState({ cartOpen: false }),
+cartOpen: st.cartOpen, cartItems: cartItems, cartEmpty: st.cart.length === 0, upsell: upsell,
+cartTitle: isB2B ? 'Aggiunto all’ordine' : 'Aggiunto al carrello',
+cartCountLabel: cartCount === 1 ? '1 articolo' : cartCount + ' articoli',
+cartSubtotal: isB2B ? '[TOTALE B2B] €' : fmt(st.cart.reduce((a, x) => a + x.unit * x.qty, 0)),
+cartNote: isB2B ? 'Prezzi IVA esclusa · pagamento secondo condizioni concordate' : 'IVA inclusa · spedizione calcolata al checkout',
+checkoutCta: isB2B ? 'Conferma l’ordine' : 'Vai alla cassa',
+viewCartCta: isB2B ? 'Vedi l’ordine' : 'Vedi il carrello',
+cartCta: isB2B ? 'Aggiungi all’ordine' : 'Aggiungi al carrello',
+vatShort: isB2B ? 'IVA escl.' : 'IVA incl.',
+cw: cw, colorways: colorways,
+mainAlt: 'Tuta PRO-R, ' + (views[st.thumb].back ? 'argento' : cw.name.toLowerCase()) + ', ' + views[st.thumb].label.toLowerCase(),
+mainImg: photoOf(views[st.thumb], 1400), mainImgStyle: imgStyle(views[st.thumb], '28px'),
+mv: views[st.thumb],
+sizes: sizes, thumbs: thumbs, tabs: tabs, reqTypes: reqTypes,
+sizeLabel: st.size, sizeHint: hintFor(st.size), sizeNums: sizeNums,
+showCart: st.size !== 'Su misura',
+tabDesc: st.tab === 'desc', tabTech: st.tab === 'tech', tabFia: st.tab === 'fia', tabSize: st.tab === 'size',
+showGraphic: showGraphic, showMeasures: showMeasures,
+cfgC1: st.cfg.c1, cfgC2: st.cfg.c2, cfgC3: st.cfg.c3,
+cfgName: p1Name(st.cfg.c1) + ' / ' + p1Name(st.cfg.c2) + ' / ' + p1Name(st.cfg.c3),
+cfgRows: [['c1', 'Colore principale'], ['c2', 'Spalle e fasce'], ['c3', 'Dettagli e profili']].map(([k, label]) => ({
+key: k, label: label, hid: p1Name(st.cfg[k]) + ' ' + st.cfg[k],
+change: (e) => this.pickColor(k, e.target.value),
+sw: P1PAL.map(([nm, hex]) => ({ name: nm, hex: hex, on: st.cfg[k] === hex, onTxt: st.cfg[k] === hex ? 'true' : 'false', label: label + ': ' + nm, style: p1Sw(hex, st.cfg[k] === hex), pick: () => this.pickColor(k, hex) }))
+})),
+measuresTitle: measuresN + ' · Misure',
+contactTitle: n + ' · I tuoi dati',
+specs: [
+{ k: 'Omologazione', v: 'FIA 8856-2018' },
+{ k: 'Tessuto', v: '100% Nomex®, foderato in maglia 100% aramidica' },
+{ k: 'Strati e peso', v: '3 strati · 315 g/m²' },
+{ k: 'Traspirabilità', v: '+45% rispetto alla PRO della precedente omologazione' },
+{ k: 'Vestibilità', v: 'REGULAR, sistema R-FLEXI' },
+{ k: 'Inserti elastici', v: 'Cavallo, spalle, avambracci e zona lombare' },
+{ k: 'Dettagli', v: 'Tasche nascoste, profili ricamati sulle spalle, spalline rinforzate' },
+{ k: 'Produzione', v: 'Fatta a mano a Leinì (TO), Italia' }
+],
+sizeRows: [
+{ k: 'Altezza (cm)', cells: sizeNums.map(() => '[—]') },
+{ k: 'Peso (kg)', cells: sizeNums.map(() => '[—]') },
+{ k: 'Torace (cm)', cells: sizeNums.map(() => '[—]') },
+{ k: 'Vita (cm)', cells: sizeNums.map(() => '[—]') },
+{ k: 'Fianchi (cm)', cells: sizeNums.map(() => '[—]') }
+],
+related: [
+{ name: 'X-FLOW Slim Fit Top', cat: 'Intimo ignifugo', tag: 'Modellato per i professionisti', priceText: isB2B ? '[PREZZO B2B] €' : 'da 181,78 €', photo: '[FOTO]', isTop: true },
+{ name: 'AIR Balaclava', cat: 'Sottocasco', tag: 'Traspirabilità +33%', priceText: isB2B ? '[PREZZO B2B] €' : 'da 48,74 €', photo: '[FOTO]', isBala: true },
+{ name: 'Guanti SPEED', cat: 'Guanti', tag: 'Cuciture esterne, maglia aramidica', priceText: isB2B ? '[PREZZO B2B] €' : 'da 142,74 €', photo: '[FOTO]', isGlove: true },
+{ name: 'Scarpe SUPERLIGHT', cat: 'Scarpe', tag: 'Pelle di canguro, suola leggera', priceText: isB2B ? '[PREZZO B2B] €' : 'da 304,39 €', photo: '[FOTO]', isShoe: true }
+]
+};
+}
+}</script><script src="/p1.js"></script></body></html>

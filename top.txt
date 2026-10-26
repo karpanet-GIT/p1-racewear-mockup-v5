@@ -1,0 +1,31 @@
+<div style="background: #DBFB00; color: #0E0E0E; font-size: 13px; font-weight: 500">
+<div style="max-width: 1360px; margin: 0 auto; padding: 9px 40px; display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; align-items: center">
+<span>{{topbar}}</span>
+<div style="display: flex; gap: 24px; align-items: center">
+<a href="Main.dc.html#b2b" style="font-weight: 600">{{b2bLink}}</a>
+<span>IT · <a href="#">EN</a></span>
+</div>
+</div>
+</div>
+<header style="background: #0E0E0E; color: #FFFFFF; border-bottom: 1px solid #262628">
+<div style="max-width: 1360px; margin: 0 auto; padding: 16px 40px; display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: center; justify-content: space-between">
+<a href="Main.dc.html" aria-label="P1 Advanced Racewear, homepage" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #FFFFFF">
+<img src="/logo-p1.png" alt="" style="height: 46px; width: auto; display: block">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 18px; letter-spacing: 0.14em; line-height: 1.05">ADVANCED<br>RACEWEAR</span>
+</a>
+<nav aria-label="Categorie" style="display: flex; flex-wrap: wrap; gap: 6px 26px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.04em; text-transform: uppercase">
+<a href="Categoria.dc.html" class="nav-d" data-nav="categoria">Tute da gara</a>
+<a href="#" class="nav-d">Intimo</a>
+<a href="#" class="nav-d">Guanti e scarpe</a>
+<a href="#" class="nav-d">Kart e meccanici</a>
+<a href="#" class="nav-d">Vintage</a>
+<a href="Main.dc.html#personalizza" class="nav-d" style="color: #DBFB00">Su misura</a>
+<a href="Storia.dc.html" class="nav-d" data-nav="storia">Chi siamo</a>
+</nav>
+<div class="z32">
+<button class="z18" aria-label="Cerca"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg></button>
+<button class="z18" aria-label="Il mio account"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"></path></svg></button>
+<button class="z18" aria-label="Carrello"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8z"></path><path d="M9 8V6a3 3 0 016 0v2"></path></svg></button>
+</div>
+</div>
+</header>

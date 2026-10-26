@@ -1,0 +1,186 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tute da gara omologate FIA – P1 Advanced Racewear (mockup)</title><link rel="stylesheet" href="/p1.css"></head><body data-page="categoria" style="margin:0"><div id="app"></div><script type="text/x-p1" id="tpl"><helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&amp;family=Work+Sans:wght@400;500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0E0E0E}a:hover{color:#0E0E0E;text-decoration-color:#C9DF00}
+.nav-d{color:#FFFFFF;text-decoration:none}.nav-d:hover{color:#DBFB00}
+.lnk-d{color:#FFFFFF}.lnk-d:hover{color:#DBFB00}
+.btn-neon{background:#DBFB00;color:#0E0E0E;text-decoration:none}.btn-neon:hover{background:#FFFFFF;color:#0E0E0E}
+.chip{color:#FFFFFF;text-decoration:none;border:1.5px solid #4A4A4E}.chip:hover{border-color:#DBFB00;color:#DBFB00}
+.card{text-decoration:none;color:#0E0E0E}.card:hover .cardimg{outline:3px solid #DBFB00;outline-offset:-3px}
+input[type=checkbox]{width:18px;height:18px;accent-color:#0E0E0E;margin:0}
+</style>
+</helmet>
+<div class="z11">
+<!--TOP-->
+<section style="background: #0E0E0E; color: #FFFFFF">
+<div style="max-width: 1360px; margin: 0 auto; padding: 24px 40px 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 32px 56px; align-items: end">
+<div class="z28">
+<nav aria-label="Percorso" style="font-size: 13px; color: #A6A7AA"><a href="Main.dc.html" class="lnk-d">Home</a> / Tute da gara</nav>
+<h1 class="z50">Tute da gara<br><span style="color: #DBFB00">omologate FIA</span></h1>
+<p style="margin: 0; color: #C9C9CC; max-width: 580px">Tute per GT, rally, turismo e formula fatte a mano in Italia e omologate FIA 8856-2018. Tre linee, modelli per donna, bambino e corporature robuste. Ogni tuta si può personalizzare o realizzare su misura.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end">
+<a href="#" class="chip z5">Linea PRO · 3</a>
+<a href="#" class="chip z5">Linea LITE · 4</a>
+<a href="#" class="chip z5">Linea MID · 5</a>
+<a href="#" class="chip z5">Donna</a>
+<a href="#" class="chip z5">Bambino</a>
+<a href="#" class="chip z5">Vintage</a>
+</div>
+</div>
+</section>
+<div style="max-width: 1360px; margin: 0 auto; padding: 40px 40px 80px; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+<aside aria-label="Filtri" style="flex: 1 1 250px; max-width: 290px; display: flex; flex-direction: column; gap: 26px">
+<div style="display: flex; justify-content: space-between; align-items: center">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase">Filtra</span>
+<a href="#" style="font-size: 14px">Azzera</a>
+</div>
+<sc-for list="{{filters}}" as="g">
+<fieldset style="margin: 0; padding: 18px 0 0; border: 0; border-top: 1px solid #CDCDC9; display: flex; flex-direction: column; gap: 8px">
+<legend class="z51">{{g.name}}</legend>
+<sc-for list="{{g.options}}" as="o">
+<label style="display: flex; align-items: center; gap: 10px; min-height: 30px; font-size: 15px; cursor: pointer">
+<input type="checkbox" checked="{{o.on}}">
+<span style="flex: 1">{{o.label}}</span>
+<span style="color: #5A5B5E; font-size: 13px">{{o.count}}</span>
+</label>
+</sc-for>
+</fieldset>
+</sc-for>
+<fieldset style="margin: 0; padding: 18px 0 0; border: 0; border-top: 1px solid #CDCDC9; display: flex; flex-direction: column; gap: 10px">
+<legend class="z51">Taglia</legend>
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px">
+<sc-for list="{{filterSizes}}" as="z">
+<button aria-pressed="{{z.on}}" style="{{z.style}}">{{z.label}}</button>
+</sc-for>
+</div>
+<a href="#" style="font-size: 14px">Che taglia sono? Guida taglie</a>
+</fieldset>
+</aside>
+<div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; padding-bottom: 16px; border-bottom: 1px solid #CDCDC9">
+<span style="font-size: 15px"><strong>12 tute</strong> · {{priceNote}}</span>
+<div style="display: flex; align-items: center; gap: 10px">
+<label for="sort" style="font-size: 14px; color: #5A5B5E">Ordina per</label>
+<select id="sort" style="height: 44px; padding: 0 12px; border: 1px solid #A6A7AA; background: #FFFFFF; font: inherit"><option>In evidenza</option><option>Prezzo crescente</option><option>Prezzo decrescente</option><option>Novità</option></select>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 36px 24px">
+<sc-for list="{{products}}" as="p">
+<article class="z52">
+<a href="Prodotto.dc.html" class="card cardimg" style="height: 320px; background: #FFFFFF; position: relative; display: flex; align-items: center; justify-content: center">
+<span style="position: absolute; top: 10px; left: 10px; display: flex; gap: 6px; flex-wrap: wrap">
+<span class="z36">FIA 8856-2018</span>
+<sc-if value="{{p.badge}}"><span class="z37">{{p.badge}}</span></sc-if>
+</span>
+<sc-if value="{{p.img}}"><img src="{{p.img}}" alt="{{p.alt}}" loading="lazy" style="width: 100%; height: 100%; object-fit: contain; padding: 16px; box-sizing: border-box; mix-blend-mode: multiply; display: block; padding: 24px"></sc-if><sc-if value="{{p.noImg}}"><svg viewBox="0 0 200 300" width="160" height="240" role="img" aria-label="{{p.alt}}">
+<path d="M80 22 L120 22 L145 38 L172 150 L156 154 L136 80 L138 150 L140 285 L104 285 L100 165 L96 285 L60 285 L62 150 L64 80 L44 154 L28 150 L55 38 Z" fill="{{p.c1}}" stroke="#D8D8D4" stroke-width="1"></path>
+<path d="M80 22 L120 22 L145 38 L141 54 L59 54 L55 38 Z" fill="{{p.c2}}"></path>
+<path d="M86 22 L114 22 L112 30 L88 30 Z M28 150 L44 154 L46 144 L31 140 Z M172 150 L156 154 L154 144 L169 140 Z M61 190 L67 190 L65 285 L60 285 Z M139 190 L133 190 L135 285 L140 285 Z" fill="{{p.c3}}"></path>
+<path d="M64 112 L136 112 L136 120 L64 120 Z" fill="{{p.c2}}"></path>
+</svg>
+<span style="position: absolute; left: 10px; bottom: 8px; font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #5A5B5E">[FOTO {{p.name}}]</span></sc-if>
+</a>
+<div class="z32">
+<sc-for list="{{p.sw}}" as="s">
+<span title="{{s.name}}" style="{{s.style}}"></span>
+</sc-for>
+<span style="font-size: 12px; color: #5A5B5E; margin-left: 4px">{{p.nColors}}</span>
+</div>
+<div class="z6">
+<span class="z53">{{p.line}}</span>
+<a href="Prodotto.dc.html" style="font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 25px; text-transform: uppercase; line-height: 1.1; text-decoration: none">{{p.name}}</a>
+<span style="font-size: 14px; color: #3A3B3E">{{p.tag}}</span>
+<span style="font-weight: 600; margin-top: 6px">{{p.priceText}} <span class="z23">{{vat}}</span></span>
+</div>
+<sc-if value="{{isB2B}}">
+<div style="display: flex; gap: 8px; align-items: flex-end">
+<div class="z6"><label style="font-size: 12px; color: #5A5B5E">Q.tà</label><input type="number" value="1" min="1" style="width: 64px; height: 44px; padding: 0 8px; border: 1px solid #A6A7AA; background: #FFFFFF; font: inherit"></div>
+<button style="flex: 1; height: 44px; border: 0; background: #0E0E0E; color: #DBFB00; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer">Aggiungi all'ordine</button>
+</div>
+</sc-if>
+</article>
+</sc-for>
+</div>
+<aside style="margin-top: 16px; background: #0E0E0E; color: #FFFFFF; padding: 36px 40px; display: flex; flex-wrap: wrap; gap: 20px 40px; align-items: center; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 6px; max-width: 640px">
+<span style="font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 34px; text-transform: uppercase; line-height: 1">Non trovi taglia o colori? <span style="color: #DBFB00">Falla su misura.</span></span>
+<span style="color: #C9C9CC">Le tute PRO sono disponibili in 25 colori, con il tuo nome e i loghi dei tuoi sponsor. Scarica il template, disegna e inviaci la richiesta.</span>
+</div>
+<a href="Prodotto.dc.html#personalizza" class="btn-neon z2">Richiedi personalizzazione</a>
+</aside>
+</div>
+</div>
+<section class="z19" aria-labelledby="seo">
+<div style="max-width: 1360px; margin: 0 auto; padding: 80px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 56px">
+<div class="z28">
+<h2 class="z49" id="seo">Come scegliere la tuta da gara</h2>
+<p style="margin: 0; color: #3A3B3E">La linea <strong>PRO</strong> è il top di gamma: tute a 3 strati in Nomex® con maglia aramidica, leggerissime e pensate per i professionisti di GT, rally e turismo. La linea <strong>LITE</strong> offre prestazioni elevate con modelli dedicati alle donne (LITE-STAR) e alle corporature robuste (LITE-EXTRA). La linea <strong>MID</strong> è la scelta per chi cerca il miglior rapporto qualità/prezzo, dalla MID-CORSA alla MID-YOUNG GUN per i più giovani.</p>
+<p style="margin: 0; color: #3A3B3E">[Testo SEO da completare: traspirabilità, peso, cura e lavaggio, durata dell'omologazione.]</p>
+<a href="#" style="font-weight: 600">Leggi la guida completa →</a>
+</div>
+<div style="display: flex; flex-direction: column">
+<h3 style="margin: 0 0 8px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 24px; text-transform: uppercase">Domande frequenti</h3>
+<sc-for list="{{faq}}" as="q">
+<details style="border-top: 1px solid #DEDEDA; padding: 16px 0">
+<summary style="cursor: pointer; font-weight: 600; min-height: 28px">{{q.q}}</summary>
+<p style="margin: 10px 0 0; color: #3A3B3E">{{q.a}}</p>
+</details>
+</sc-for>
+</div>
+</div>
+</section>
+<!--BOTTOM-->
+</div></script><script type="text/x-dc" id="logic" data-props='{"canale":{"default":"B2C"}}'>class Component extends DCLogic {
+renderVals() {
+const isB2B = (this.props.canale ?? 'B2C') === 'B2B';
+const C = { ant: ['#3A3B3E', 'Antracite'], blk: ['#111111', 'Nero'], sil: ['#C3C5C8', 'Argento'], dbl: ['#1C2A55', 'Blu scuro'], rbl: ['#2547B8', 'Blu royal'], red: ['#D0202A', 'Rosso'], wht: ['#F4F1EA', 'Bianco'], sky: ['#8EC9EA', 'Azzurro'] };
+const sw = (keys) => keys.map((k) => ({ name: C[k][1], style: 'width: 18px; height: 18px; border-radius: 50%; background: ' + C[k][0] + '; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.25)' }));
+const raw = [
+{ name: 'PRO-R', line: 'Linea PRO', tag: 'Leggerissima e traspirante', incl: '974,78', badge: 'TOP DI GAMMA', c: ['#3A3B3E', '#8A8C90', '#DBFB00'], k: ['ant', 'blk', 'sil'] },
+{ name: 'PRO-SF', line: 'Linea PRO', tag: 'La scelta dei professionisti', incl: '974,78', badge: '', c: ['#111111', '#3A3B3E', '#C3C5C8'], k: ['blk'] },
+{ name: 'PRO-PARABOLICA', line: 'Linea PRO · Vintage', tag: 'Vera replica anni ’60', incl: '913,78', badge: 'VINTAGE', c: ['#F4F1EA', '#D9D3C6', '#8EC9EA'], k: ['wht', 'sky'] },
+{ name: 'LITE-BEST', line: 'Linea LITE', tag: 'Prestazioni senza compromessi', incl: '645,38', badge: '', c: ['#3A3B3E', '#C3C5C8', '#DBFB00'], k: ['ant', 'blk', 'dbl', 'sil', 'rbl'] },
+{ name: 'LITE-STAR', line: 'Linea LITE · Donna', tag: 'Modellata per le pilote', incl: '628,30', badge: 'DONNA', c: ['#C3C5C8', '#3A3B3E', '#D6247E'], k: ['sil', 'ant'] },
+{ name: 'LITE-EXTRA', line: 'Linea LITE · Oltre 120 kg', tag: 'Per chi ama la buona tavola', incl: '730,78', badge: 'TAGLIE FORTI', c: ['#1C2A55', '#3A3B3E', '#C3C5C8'], k: ['dbl', 'blk'] },
+{ name: 'LITE-PASSION', line: 'Linea LITE', tag: 'Ideale per i piloti amatoriali', incl: '608,78', badge: '', c: ['#111111', '#3A3B3E', '#8A8C90'], k: ['blk'] },
+{ name: 'MID-LAP.EVO', line: 'Linea MID', tag: 'La nostra tuta più amata', incl: '596,58', badge: 'BEST SELLER', c: ['#3A3B3E', '#C3C5C8', '#D0202A'], k: ['blk', 'rbl', 'sil', 'red'] },
+{ name: 'MID-GENT.EVO', line: 'Linea MID', tag: 'Comfort accessibile', incl: '669,78', badge: '', c: ['#1C2A55', '#C3C5C8', '#3A3B3E'], k: ['dbl'] },
+{ name: 'MID-CORSA', line: 'Linea MID', tag: 'Imbattibile nel rapporto qualità/prezzo', incl: '450,18', badge: '', c: ['#111111', '#3A3B3E', '#C3C5C8'], k: ['blk'] },
+{ name: 'MID-DIVA', line: 'Linea MID · Donna', tag: 'Modellata per le pilote', incl: '572,18', badge: 'DONNA', c: ['#3A3B3E', '#C3C5C8', '#D6247E'], k: ['ant'] },
+{ name: 'MID-YOUNG GUN', line: 'Linea MID · Bambino', tag: 'Per i campioni di domani', incl: '486,78', badge: 'BAMBINO', c: ['#3A3B3E', '#C3C5C8', '#DBFB00'], k: ['ant'] }
+];
+const P1IMG = {'PRO-R': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0000s_0005_PRO-R_Anthracite.jpg?width=800', 'PRO-SF': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0000s_0000_PRO-SF_Black.jpg?width=800', 'PRO-PARABOLICA': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/parabolica2.jpg?width=600', 'LITE-BEST': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/LITE-BEST_ROYAL_BLUE_AABERF_FRONT.png?width=800', 'LITE-STAR': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/LITE-STAR_SILVER_AASTSA_FRONT.png?width=800', 'LITE-EXTRA': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/LITE-EXTRA_DARK_BLUE_3.png?width=800', 'LITE-PASSION': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/LITE-PASSION_BLACK_AAPABA_THREEQUARTERFRONTRIGHT_4b38ed66-7cae-4e45-a4b9-5233cd83878c.png?width=800', 'MID-LAP.EVO': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0001s_0004_LAP.EVO_Red.jpg?width=800', 'MID-CORSA': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0001s_0012_CORSA_Black.jpg?width=800', 'MID-DIVA': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0001s_0011_DIVA_Anthracite.jpg?width=800', 'MID-YOUNG GUN': 'https://cdn.shopify.com/s/files/1/0795/7010/8699/files/P1Images_0001s_0000_YOUNGGUN_DarkBlue.jpg?width=800'};
+const products = raw.map((p) => ({
+name: p.name, line: p.line, tag: p.tag, badge: p.badge,
+c1: p.c[0], c2: p.c[1], c3: p.c[2],
+alt: 'Tuta ' + p.name, img: P1IMG[p.name] || '', noImg: !P1IMG[p.name],
+sw: sw(p.k), nColors: p.k.length === 1 ? '1 colore + su misura' : p.k.length + ' colori + su misura',
+priceText: isB2B ? '[PREZZO B2B] €' : 'da ' + p.incl + ' €'
+}));
+return {
+isB2B: isB2B,
+topbar: isB2B ? 'Accesso B2B: Team Rossi Motorsport [esempio] · Listino riservato attivo' : '100% fatto a mano in Italia · Omologazione FIA 8856-2018 · Su misura e personalizzazione',
+b2bLink: isB2B ? 'Ordine rapido per codice' : 'Area B2B team e rivenditori',
+priceNote: isB2B ? 'Listino riservato, prezzi IVA esclusa' : 'Prezzi IVA inclusa',
+vat: isB2B ? 'IVA escl. · min. [Q.TÀ]' : 'IVA incl.',
+products: products,
+filterSizes: ['46', '48', '50', '52', '54', '56', '58', '60', '62', '64'].map((s) => ({ label: s, on: s === '52' ? 'true' : 'false', style: 'min-height: 44px; padding: 0; border: 1.5px solid ' + (s === '52' ? '#0E0E0E' : '#CDCDC9') + '; background: ' + (s === '52' ? '#0E0E0E' : '#FFFFFF') + '; color: ' + (s === '52' ? '#FFFFFF' : '#0E0E0E') + '; font: inherit; cursor: pointer' })),
+filters: [
+{ name: 'Linea', options: [ { label: 'PRO', count: '3', on: false }, { label: 'LITE', count: '4', on: false }, { label: 'MID', count: '5', on: false } ] },
+{ name: 'Disciplina', options: [ { label: 'GT, turismo e formula', count: '11', on: false }, { label: 'Rally', count: '11', on: false }, { label: 'Gare storiche', count: '1', on: false } ] },
+{ name: 'Per chi', options: [ { label: 'Uomo', count: '9', on: false }, { label: 'Donna', count: '2', on: false }, { label: 'Bambino', count: '1', on: false }, { label: 'Oltre 120 kg', count: '1', on: false } ] },
+{ name: 'Colore', options: [ { label: 'Antracite', count: '5', on: false }, { label: 'Nero', count: '7', on: false }, { label: 'Argento', count: '4', on: false }, { label: 'Blu', count: '4', on: false } ] },
+{ name: 'Servizi', options: [ { label: 'Personalizzabile', count: '12', on: true }, { label: 'Su misura', count: '12', on: false } ] }
+],
+faq: [
+{ q: 'Che differenza c’è tra le linee PRO, LITE e MID?', a: 'PRO è il top di gamma per i professionisti, LITE unisce leggerezza e modelli dedicati, MID offre il miglior rapporto qualità/prezzo. [Da completare con il cliente.]' },
+{ q: 'Le tute sono omologate FIA?', a: 'Sì, tutte le tute di questa pagina sono omologate FIA 8856-2018, lo standard più recente per l’abbigliamento ignifugo dei piloti.' },
+{ q: 'Come scelgo la taglia?', a: 'Le taglie vanno dalla 46 alla 64 in base ad altezza, peso e circonferenze: trovi la tabella in ogni scheda. Fuori standard? Scegli il su misura.' },
+{ q: 'Quanto tempo serve per una tuta personalizzata?', a: '[Tempi di produzione da confermare.]' }
+]
+};
+}
+}</script><script src="/p1.js"></script></body></html>
